@@ -36,7 +36,7 @@ jobs:
           python -m pip install -r requirements.txt
           
       - name: "Azure login"  
-        uses: azure/login@v1
+        uses: azure/actions/login@v1
         with: # Set Azure credentials secret as an input
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           
