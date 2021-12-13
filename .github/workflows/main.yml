@@ -35,10 +35,10 @@ jobs:
       #    python -m pip install --upgrade pip
       #    python -m pip install -r requirements.txt
           
-      - name: "Azure login"  
-        uses: azure/login@v1
-        with: # Set Azure credentials secret as an input
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      #- name: "Azure login"  
+      #  uses: azure/login@v1
+      #  with: # Set Azure credentials secret as an input
+      #    creds: ${{ secrets.AZURE_CREDENTIALS }}
           
       - name: 'Run data prep script'
         working-directory: steps
